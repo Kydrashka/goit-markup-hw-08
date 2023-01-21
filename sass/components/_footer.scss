@@ -1,22 +1,31 @@
 .footer {
-  display: flex;
+  // display: flex;
+  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;
 }
 
 .footer-container {
-  display: flex;
+  // display: flex;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  // width: 1200px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.footer__address-container{
+  display: block;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
 .footer__logo {
-  display: inline-block;
+  display: flex;
   margin-bottom: 28px;
+  justify-content: center;
 }
 
 .footer__logo-white {
@@ -55,7 +64,18 @@
 
 .footer-second-container {
   display: block;
-  margin-left: 94px;
+  text-align: center;
+  // justify-content: center;
+  // margin-left: 94px;
+  margin-bottom: 60px;
+}
+.footer__list-style {
+  // display: block;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer-social {
@@ -100,8 +120,10 @@
 }
 
 .footer-social__form {
-  display: flex;
+  // display: flex;
+  display: block;
   align-items: center;
+  justify-content: center;
 }
 
 .footer-social__email {
@@ -120,7 +142,7 @@
 }
 
 .button-submit {
-  margin-left: 12px;
+  margin-top: 15px;
   display: flex;
 }
 
@@ -130,4 +152,8 @@
   height: 24px;
   fill: currentColor;
   margin-left: 10px;
+}
+
+.footer-second-container--no-margin{
+  margin-bottom: 0;
 }

@@ -11,11 +11,15 @@ h4 {
   margin: 0 auto;
 }
 .container {
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: 480px){
+    width: 480px;
+  }
 }
 
 .title {
@@ -23,7 +27,8 @@ h4 {
 }
 
 .list-style {
-  display: flex;
+  display: block;
+  // display: flex;
   list-style-type: none;
   margin: 0px;
   padding: 0px;

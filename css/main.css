@@ -21,11 +21,15 @@ h4 {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   text-align: center;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .title {
@@ -33,9 +37,7 @@ h4 {
 }
 
 .list-style {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
@@ -95,7 +97,6 @@ h4 {
 }
 
 .nav__logo {
-  margin-right: 93px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,8 +133,6 @@ h4 {
 .nav-list__link {
   position: relative;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   text-decoration: none;
   color: inherit;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -195,30 +194,26 @@ h4 {
 }
 
 .section-hero {
-  max-width: 1680px;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: #2F303A;
-}
-
-.section-image {
   margin: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 480px;
+  height: 400px;
 }
 
 .hero {
   color: var(--white-text-color);
-  width: 696px;
-  margin: 0 auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.615;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  padding-top: 118px;
+  padding-bottom: 30px;
 }
 
 .backdrop {
@@ -417,9 +412,14 @@ h4 {
   color: var(--accent-text-color);
 }
 
+.feature-list {
+  display: block;
+  margin: 0 auto;
+}
+
 .section-features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container-null {
@@ -427,9 +427,8 @@ h4 {
 }
 
 .feature-list__item {
-  width: 270px;
-  text-align: start;
-  margin-left: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .feature-list__item--no-margin {
@@ -440,7 +439,7 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -460,17 +459,18 @@ h4 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: start;
+  text-align: center;
 }
 
 .feature-list__title-paragraph {
-  text-align: start;
+  text-align: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .what-we-do {
+  display: none;
   padding-bottom: 94px;
 }
 
@@ -520,7 +520,7 @@ h4 {
 }
 
 .list {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   background-color: var(--secondary-background-color);
 }
 
@@ -532,17 +532,12 @@ h4 {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-left: 30px;
-}
-
-.about-us-section__item--no-margin {
-  margin-left: 0px;
+  margin-bottom: 30px;
 }
 
 .about-us-section__photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  width: 100%;
 }
 
 .title-worker {
@@ -617,12 +612,13 @@ h4 {
 
 .section-our-clients {
   color: var(--title-text-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .company-container {
   max-width: 1280px;
+  margin: -15px;
 }
 
 .clients {
@@ -634,17 +630,19 @@ h4 {
 }
 
 .company-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 480px;
   margin-top: 50px;
 }
 
 .company-list__element {
-  width: 170px;
+  width: 210px;
   height: 92px;
-  margin-left: 30px;
-}
-
-.company-list__element--no-margin {
-  margin-left: 0;
+  margin: 15px;
 }
 
 .company-list__link {
@@ -678,28 +676,34 @@ h4 {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;
 }
 
 .footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.footer__address-container {
+  display: block;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
 .footer__logo {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 28px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__logo-white {
@@ -736,7 +740,20 @@ h4 {
 
 .footer-second-container {
   display: block;
-  margin-left: 94px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.footer__list-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer-social {
@@ -787,12 +804,13 @@ h4 {
 }
 
 .footer-social__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-social__email {
@@ -811,7 +829,7 @@ h4 {
 }
 
 .button-submit {
-  margin-left: 12px;
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,6 +843,10 @@ h4 {
   height: 24px;
   fill: currentColor;
   margin-left: 10px;
+}
+
+.footer-second-container--no-margin {
+  margin-bottom: 0;
 }
 
 .portfolio-section {

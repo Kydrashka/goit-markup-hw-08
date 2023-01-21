@@ -1,11 +1,14 @@
 .section-our-clients {
   color: var(--title-text-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 }
 
 .company-container {
   max-width: 1280px;
+  margin: -15px;
 }
 
 .clients {
@@ -17,18 +20,24 @@
 }
 
 .company-list {
+  display: flex; 
+  flex-wrap: wrap;
+  width: 480px;
   margin-top: 50px;
 }
 
 .company-list__element {
-  width: 170px;
+  width: 210px;
+  // width: 170px;
   height: 92px;
-  margin-left: 30px;
+  // margin-left: 30px;
+  margin: 15px;
+
 }
 
-.company-list__element--no-margin {
-  margin-left: 0;
-}
+// .company-list__element--no-margin {
+//   margin-left: 0;
+// }
 
 .company-list__link {
   display: flex;
