@@ -1,4 +1,6 @@
 .section-our-clients {
+  display: flex;
+  justify-content: center;
   color: var(--title-text-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -7,8 +9,14 @@
 }
 
 .company-container {
-  max-width: 1280px;
-  margin: -15px;
+  max-width: 480px;
+  // max-width: 1280px;
+  margin: auto;
+  padding: 0;
+
+  @media (min-width: 768px){
+    max-width: 768px;
+  }
 }
 
 .clients {
@@ -24,6 +32,11 @@
   flex-wrap: wrap;
   width: 480px;
   margin-top: 50px;
+  // margin: -15px;
+
+  @media (min-width: 768px){
+    width: 768px;
+  }
 }
 
 .company-list__element {
@@ -32,6 +45,10 @@
   height: 92px;
   // margin-left: 30px;
   margin: 15px;
+
+  @media (min-width: 768px){
+    width: 226px;
+  }
 
 }
 

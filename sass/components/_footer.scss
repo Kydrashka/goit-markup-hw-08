@@ -14,6 +14,11 @@
   width: 480px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width:768px){
+    width: 768px;
+    padding: 0 76px;
+  }
 }
 
 .footer__address-container{
@@ -69,6 +74,15 @@
   // margin-left: 94px;
   margin-bottom: 60px;
 }
+
+.for-tablet-container{
+  @media (min-width:768px){
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+  }
+}
+
 .footer__list-style {
   // display: block;
   display: flex;

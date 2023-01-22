@@ -11,14 +11,17 @@ h4 {
   margin: 0 auto;
 }
 .container {
-  // width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   text-align: center;
+  @media (min-width:768px){
+    max-width: 768px;
+  }
 
-  @media (min-width: 480px){
-    width: 480px;
+  @media (min-width:120px){
+    max-width: 1200px;
   }
 }
 
@@ -28,10 +31,13 @@ h4 {
 
 .list-style {
   display: block;
-  // display: flex;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+  @media (min-width:768px){
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .button {
