@@ -1,64 +1,67 @@
-body {
-  color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
-}
+// body {
+//   color: var(--primary-text-color);
+//   font-family: Roboto, sans-serif;
+// }
 
-p,
-h1,
-h2,
-h3,
-h4 {
-  margin: 0 auto;
-}
-.container {
-  max-width: 480px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width:768px){
-    max-width: 768px;
-  }
+// p,
+// h1,
+// h2,
+// h3,
+// h4 {
+//   margin: 0 auto;
+// }
+// .container {
+//   max-width: 480px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin: 0 auto;
+//   text-align: center;
+//   @media (min-width:768px){
+//     width: 768px;
+//   }
 
-  @media (min-width:120px){
-    max-width: 1200px;
-  }
-}
+//   @media (min-width:1200px){
+//           width: 1200px;
+//   }
+// }
 
-.title {
-  color: var(--title-text-color);
-}
+// .title {
+//   color: var(--title-text-color);
+// }
 
-.list-style {
-  display: block;
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  @media (min-width:768px){
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
+// .list-style {
+//   display: block;
+//   list-style-type: none;
+//   margin: 0px;
+//   padding: 0px;
+//   @media (min-width:768px){
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+//   @media (min-width:1200px){
+//         // flex-wrap: nowrap;
+//   }
+// }
 
-.button {
-  color: var(--white-text-color);
-  background-color: var(--accent-text-color);
-  margin: 0 auto;
-  border-radius: 4px;
-  padding: 10px 24px;
-  min-width: 200px;
-  outline: none;
-  border: 0;
+// .button {
+//   color: var(--white-text-color);
+//   background-color: var(--accent-text-color);
+//   margin: 0 auto;
+//   border-radius: 4px;
+//   padding: 10px 24px;
+//   min-width: 200px;
+//   outline: none;
+//   border: 0;
 
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+//   font-family: Roboto, sans-serif;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.88;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-}
+//   display: flex;
+//   align-items: center;
+//   text-align: center;
+//   justify-content: center;
+//   letter-spacing: 0.06em;
+//   cursor: pointer;
+// }

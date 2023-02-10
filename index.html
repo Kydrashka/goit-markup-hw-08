@@ -21,11 +21,11 @@
   <!--header-->
   <header class="header">
     <div class="container nav-container">
+      </button>
       <nav class="nav">
         <a class="nav__logo" href="index.html">
           <span class="nav__accent">Web</span><span class="nav__logo-black">Studio</span>
         </a>
-        <div class="menu"></div>
         <ul class="nav-list list-style">
           <li>
             <a class="nav-list__link nav-list__link--active" href="./index.html">Студія</a>
@@ -54,6 +54,11 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
+      <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-open-button">
+          <use class="icon-open" href="./images/icons.svg#icon-menu_24px" weight="24px" height="16px"></use>
+          <use class="icon-close" href="./images/icons.svg#close-menu-button"></use>
+        </svg>
     </div>
   </header>
 
@@ -480,6 +485,8 @@
   </footer>
 
   <script src="./js/modal.js"></script>
+
+  <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
